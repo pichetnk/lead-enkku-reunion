@@ -19,7 +19,7 @@ class CreateUserDetailsTable extends Migration
             $table->string('nickname',50);
             $table->string('team',5);
             $table->string('group',5)->nullable();
-            $table->string('generation',5);
+            $table->string('generation',5)->nullable();
            // $table->enum('join_event',['going', 'not_go']);
             $table->foreign('facebook_id')->references('facebook_id')->on('users');
             $table->timestamps();

@@ -31,6 +31,6 @@ Route::get('/register', function () {
     return view('register');
 })->name('register');
 
-Route::get('/team', function () {
-    return view('team');
-})->name('team');
+Route::get('/team',['uses' => 'TeamController@show'])->name('team');
+
+Route::post('/register',  'ApiController@register' );

@@ -40,20 +40,26 @@
             <div class="row justify-content-center "  >
                 <div class="col-8"  >
                    <h3> REGISTER </h3>
-                   <form>
+                   <form id="registerForm" action="#">
+                         
                     <div class="form-group row">
-                        <label for="inputName" class="col-sm-4 col-form-label">Name</label>
+                        <label for="nickname" class="col-sm-4 col-form-label">Name</label>
                         <div class="col-sm-8">
-                        <input type="text"  class="form-control" id="inputName" placeholder="Name">
+                        <input type="text"  class="form-control" id="nickname" name="nickname" placeholder="Name">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputSecret" class="col-sm-4 col-form-label">Secret Code</label>
+                        <label for="secretcode" class="col-sm-4 col-form-label">Secret Code</label>
                         <div class="col-sm-8">
-                        <input type="password" class="form-control" id="inputSecret" placeholder="Secret Code">
+                        <input type="password" class="form-control" id="secretcode"  name="secretcode"  placeholder="Secret Code">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <div class="alert alert-danger" role="alert" id="errorMsgRegister" >
+                        
+                        </div>
+                    <button type="button" id="btnRegister" class="btn btn-primary">Register</button>
+                    <input type="hidden"  id="facebook_id" name="facebook_id" value="{{ Auth::user()->facebook_id }}">                         
+                            {{ csrf_field() }}
                     </form>
                 </div>
            </div>

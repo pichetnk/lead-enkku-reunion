@@ -32,9 +32,13 @@ html, body
   width:100%;
   overflow:hidden;
 }
+
 #appRegister {
   padding-top: 5em;
   background-color: #c2ebfb;
+}
+#errorMsgRegister {
+  display: none;
 }
 #register-header {
    background: url('/images/bg-register.png') repeat-x scroll top transparent;
@@ -57,12 +61,12 @@ html, body
 }
 #team-footer {
   background:url('/images/register-bg-footer.png')  repeat-x scroll top transparent; 
-   background-color: #c2ebfb;
+  /* background-color: #c2ebfb;*/
    height: 20em; 
    width:100%; 
    overflow:hidden;
 }
-#lan
+ 
 #landing-text {
   position: relative;
   top : 25%;
@@ -116,7 +120,31 @@ html, body
   position: relative;
   padding-top: 4em;
 }
+.team-leader {
+  position: relative;
+  top: 1em;
+      .leader-profile-pic {
+        position: initial;
+        display: inline-block;
+      }
+      .leader-profile-name {
+        padding-left: 2em;
+        position: initial;
+        display: inline-block;
+        color: #000;
+        font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+      }
+ }
+ .myprofile {
+   position: relative;
+   top: 2em;
+   bottom: 3em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+  border: 0.3em solid #000;
+ }
 .team{
+   
    padding-top: 4em;
     .logo {
       position: relative;
@@ -126,7 +154,7 @@ html, body
       }
     }
     .team-name {
-      color: #c1272c;
+      color: #000;
       font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
       position: relative;
       left: 2em;
@@ -134,59 +162,70 @@ html, body
         h1 {
           font-size: 4em;
         }
-     } 
-     .team-leader {
-      position: relative;
-      top: 1em;
-          .profile-pic {
-            position: initial;
-            display: inline-block;
-          }
-          .profile-name {
-            padding-left: 2em;
-            position: initial;
-            display: inline-block;
-            color: #c1272c;
-            font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
-          }
-     }
+    } 
+    
+     
     .team-fire {
+      
       border-top: 1.3em solid #c1272c;
+        .team-name {
+            color: #c1272c;        
+        } 
+        .leader-profile-name {          
+          color: #c1272c;           
+        }
     }
     .team-grandt{
+      
       border-top: 1.3em solid #faaf3a;
+        .team-name {
+          color: #faaf3a;          
+        } 
+        .leader-profile-name {          
+          color: #faaf3a;           
+        }
     }
     .team-ocain {
+     
       border-top: 1.3em solid #0070bb;
+      .team-name {
+        color: #0070bb;          
+      } 
+      .leader-profile-name {          
+        color: #0070bb;           
+      }
     }
     .team-heaven{
+     
       border-top: 1.3em solid #998575;
+        .team-name {
+          color: #998575;          
+        } 
+        .leader-profile-name {          
+          color: #998575;           
+        }
     }
   }
 
 .member {
   position: relative;
   display: inline-table;
-  /* padding-left: 3em;
-   padding-top: 2em;*/
-  .profile-name {
+ padding-left: 3em;
+   padding-top: 2em; 
   
-    color: #c1272c;
-    font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
-  }
  
 }
-.team-fire-member{
-  
+.team-member{
+  padding-top: 2em; 
+  .profile-name {
+     padding-top: 0.5em;
+     color: #000;
+     font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+   }
 }
-  .pic-frame {
+ 
+.pic-frame {
     display: inline-block;
-    position: relative;
-    .profile-pic {
-
-    }
-    .profile-name {
-
-    }
+    position: relative;   
     
   }

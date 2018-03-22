@@ -7,16 +7,39 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+ 
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+$("#appRegister").ready(function () {
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+$("#btnRegister").on("click",function()
+{ 
+    let data = $("#registerForm").serialize();
+    
+     $.ajax({
+        method :"post",
+        url: "/register",
+        data: data,
+        type : "json",
+        success: function( data ) {
+           
+            if(data.error_code=='00'){
+                console.log('valid');
+                $('#errorMsgRegister').html(data.error);
+                $('#errorMsgRegister').show();
+            }if(data.error_code=='01'){
+                console.log('user register');
+                $('#errorMsgRegister').html(data.error);
+                $('#errorMsgRegister').show();
+            }else {
+               console.log('Not found error');
+               window.location.href = '/team';                 
 
-const app = new Vue({
-    el: '#app'
+            }
+        }
+      });
+     
+   
+      
+            return false;
+  });
 });

@@ -19,15 +19,18 @@ class AuthController extends Controller
      */
     public function redirectToFacebook()
     {   
+
         
         if(Auth::check()){
-            $userDetail= UserDetail::where('facebook_id',Auth::user()->facebook_id)->first();
+          $userDetail= UserDetail::where('facebook_id',Auth::user()->facebook_id)->first();
             if($userDetail) {
                 return redirect()->route('team');
             }else {
                 return redirect()->route('register');
             }
+             
         }
+         
         
         return Socialite::driver('facebook')->redirect();
     }
@@ -46,13 +49,13 @@ class AuthController extends Controller
         Auth::login($authUser, true);
         Auth::guard('api')->user();
         
-
+ 
         $userDetail= UserDetail::where('facebook_id', $user->id)->first();
         if($userDetail) {
              return redirect()->route('team');
         }else {
               return redirect()->route('register');
-        }
+        } 
     }
 
 
