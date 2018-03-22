@@ -9,11 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <meta property="og:url"          content="{{URL::to('/')}}" />
-    <meta property="og:title"        content="YWC Reunion8" />
-    <meta property="og:description"  content="เพราะเข้าค่ายแล้วไม่มีวันจบ เลยต้องกลับมาพบกันใหม่" />
-    <meta property="og:image"        content="{{URL::to('/')}}/img/fb.jpg" />
-    <meta property="fb:app_id" content="{{env('FACEBOOK_APP_ID', '') }}" />
+ 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
@@ -25,46 +21,8 @@
     </script>
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top navbar-ywc">
-         <div class="navbar-bg">
-             <div class="navbar_boder"></div>
-             
-         </div>
-        
-            <div class="container">
-                <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @if(Route::current()->getName() != 'home')
-                        <a class="navbar-brand" href="{{URL::to('/')}}"><img src="img/logo.svg" alt=" "/></a>
-                    @endif
-                    
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                       <li><a href="{{ route('home') }}" class="menuItem">HOME</a></li>
-                    
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-           
-        </nav>
+     
+    <div id="app"> 
 
         @yield('content')
     </div>

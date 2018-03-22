@@ -4,11 +4,189 @@
 
 // Variables
 @import "variables";
-
+@import "mixins";
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@include font-face(CharlemagneStdBold, "fonts/CharlemagneStd-Bold", null, null, otf);
+
+html, body
+{
+    height: 100%;
+}
+ 
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+#app {
+  height:100%;
+  width:100%;
+   
+}
+ 
+#appHome{
+  background-image: url('/images/landing-bg.png');
+  background-repeat : round;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+#appRegister {
+  padding-top: 5em;
+  background-color: #c2ebfb;
+}
+#register-header {
+   background: url('/images/bg-register.png') repeat-x scroll top transparent;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45em; 
+    width:100%;
+    overflow:hidden;
+    padding-top: 3em;
+}
+
+#register-footer {
+   background:url('/images/register-bg-footer.png')  repeat-x scroll top transparent; 
+    background-color: #c2ebfb;
+    height: 20em; 
+    width:100%; 
+    overflow:hidden;
+}
+#team-footer {
+  background:url('/images/register-bg-footer.png')  repeat-x scroll top transparent; 
+   background-color: #c2ebfb;
+   height: 20em; 
+   width:100%; 
+   overflow:hidden;
+}
+#lan
+#landing-text {
+  position: relative;
+  top : 25%;
+  font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+  color : #269ab7;
+  text-shadow: rgb(255, 255, 255) 7px 0px 0px, rgb(255, 255, 255) 6.92869px 0.996602px 0px, rgb(255, 255, 255) 6.71622px 1.9729px 0px, rgb(255, 255, 255) 6.36692px 2.909px 0px, rgb(255, 255, 255) 5.8879px 3.78584px 0px, rgb(255, 255, 255) 5.28893px 4.58555px 0px, rgb(255, 255, 255) 4.5822px 5.29183px 0px, rgb(255, 255, 255) 3.78212px 5.8903px 0px, rgb(255, 255, 255) 2.90498px 6.36876px 0px, rgb(255, 255, 255) 1.96865px 6.71747px 0px, rgb(255, 255, 255) 0.992221px 6.92932px 0px, rgb(255, 255, 255) -0.00442571px 7px 0px, rgb(255, 255, 255) -1.00098px 6.92806px 0px, rgb(255, 255, 255) -1.97715px 6.71498px 0px, rgb(255, 255, 255) -2.91303px 6.36508px 0px, rgb(255, 255, 255) -3.78956px 5.88551px 0px, rgb(255, 255, 255) -4.58889px 5.28603px 0px, rgb(255, 255, 255) -5.29472px 4.57885px 0px, rgb(255, 255, 255) -5.89269px 3.77839px 0px, rgb(255, 255, 255) -6.3706px 2.90095px 0px, rgb(255, 255, 255) -6.71871px 1.96441px 0px, rgb(255, 255, 255) -6.92995px 0.98784px 0px, rgb(255, 255, 255) -6.99999px -0.00885142px 0px, rgb(255, 255, 255) -6.92743px -1.00536px 0px, rgb(255, 255, 255) -6.71372px -1.98139px 0px, rgb(255, 255, 255) -6.36324px -2.91705px 0px, rgb(255, 255, 255) -5.88311px -3.79328px 0px, rgb(255, 255, 255) -5.28313px -4.59223px 0px, rgb(255, 255, 255) -4.57551px -5.29762px 0px, rgb(255, 255, 255) -3.77466px -5.89507px 0px, rgb(255, 255, 255) -2.89692px -6.37243px 0px, rgb(255, 255, 255) -1.96016px -6.71995px 0px, rgb(255, 255, 255) -0.983458px -6.93057px 0px, rgb(255, 255, 255) 0.0132771px -6.99999px 0px, rgb(255, 255, 255) 1.00974px -6.92679px 0px, rgb(255, 255, 255) 1.98564px -6.71247px 0px, rgb(255, 255, 255) 2.92107px -6.36139px 0px, rgb(255, 255, 255) 3.797px -5.88071px 0px, rgb(255, 255, 255) 4.59557px -5.28022px 0px, rgb(255, 255, 255) 5.30051px -4.57215px 0px, rgb(255, 255, 255) 5.89746px -3.77094px 0px, rgb(255, 255, 255) 6.37426px -2.89289px 0px, rgb(255, 255, 255) 6.72119px -1.95591px 0px, rgb(255, 255, 255) 6.93119px -0.979076px 0px;  
+   h1{
+    font-size: 6em;
+   }
+   h3{
+    font-size: 3em;
+   }
+   h4{
+    font-size: 2em;
+   }
+}
+
+#header-text{
+  position: relative;   
+  font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+  color : #269ab7;
+  text-shadow: rgb(255, 255, 255) 7px 0px 0px, rgb(255, 255, 255) 6.92869px 0.996602px 0px, rgb(255, 255, 255) 6.71622px 1.9729px 0px, rgb(255, 255, 255) 6.36692px 2.909px 0px, rgb(255, 255, 255) 5.8879px 3.78584px 0px, rgb(255, 255, 255) 5.28893px 4.58555px 0px, rgb(255, 255, 255) 4.5822px 5.29183px 0px, rgb(255, 255, 255) 3.78212px 5.8903px 0px, rgb(255, 255, 255) 2.90498px 6.36876px 0px, rgb(255, 255, 255) 1.96865px 6.71747px 0px, rgb(255, 255, 255) 0.992221px 6.92932px 0px, rgb(255, 255, 255) -0.00442571px 7px 0px, rgb(255, 255, 255) -1.00098px 6.92806px 0px, rgb(255, 255, 255) -1.97715px 6.71498px 0px, rgb(255, 255, 255) -2.91303px 6.36508px 0px, rgb(255, 255, 255) -3.78956px 5.88551px 0px, rgb(255, 255, 255) -4.58889px 5.28603px 0px, rgb(255, 255, 255) -5.29472px 4.57885px 0px, rgb(255, 255, 255) -5.89269px 3.77839px 0px, rgb(255, 255, 255) -6.3706px 2.90095px 0px, rgb(255, 255, 255) -6.71871px 1.96441px 0px, rgb(255, 255, 255) -6.92995px 0.98784px 0px, rgb(255, 255, 255) -6.99999px -0.00885142px 0px, rgb(255, 255, 255) -6.92743px -1.00536px 0px, rgb(255, 255, 255) -6.71372px -1.98139px 0px, rgb(255, 255, 255) -6.36324px -2.91705px 0px, rgb(255, 255, 255) -5.88311px -3.79328px 0px, rgb(255, 255, 255) -5.28313px -4.59223px 0px, rgb(255, 255, 255) -4.57551px -5.29762px 0px, rgb(255, 255, 255) -3.77466px -5.89507px 0px, rgb(255, 255, 255) -2.89692px -6.37243px 0px, rgb(255, 255, 255) -1.96016px -6.71995px 0px, rgb(255, 255, 255) -0.983458px -6.93057px 0px, rgb(255, 255, 255) 0.0132771px -6.99999px 0px, rgb(255, 255, 255) 1.00974px -6.92679px 0px, rgb(255, 255, 255) 1.98564px -6.71247px 0px, rgb(255, 255, 255) 2.92107px -6.36139px 0px, rgb(255, 255, 255) 3.797px -5.88071px 0px, rgb(255, 255, 255) 4.59557px -5.28022px 0px, rgb(255, 255, 255) 5.30051px -4.57215px 0px, rgb(255, 255, 255) 5.89746px -3.77094px 0px, rgb(255, 255, 255) 6.37426px -2.89289px 0px, rgb(255, 255, 255) 6.72119px -1.95591px 0px, rgb(255, 255, 255) 6.93119px -0.979076px 0px;  
+ /*  h1{
+    font-size: 2em;
+   }
+   h3{
+    font-size: 1.5em;
+   }
+   h4{
+    font-size: 1em;
+   }*/
+}
+
+.img-team-register {
+  width: 7em;
+  
+  position: relative;
+}
+ .bg {   
+    background-image: url('/images/register-bg.png');
+    background-repeat : round;
+    min-height: 600px;
+    width:100%;
+  }
+ 
+#appTeam{
+  border-top: 2em solid #7d5d45;
+  
+}
+.team-profile {
+  position: relative;
+  padding-top: 4em;
+}
+.team{
+   padding-top: 4em;
+    .logo {
+      position: relative;
+      top : -1.3em;
+      img {
+        max-width: 13em;
+      }
+    }
+    .team-name {
+      color: #c1272c;
+      font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+      position: relative;
+      left: 2em;
+      top: 1em;
+        h1 {
+          font-size: 4em;
+        }
+     } 
+     .team-leader {
+      position: relative;
+      top: 1em;
+          .profile-pic {
+            position: initial;
+            display: inline-block;
+          }
+          .profile-name {
+            padding-left: 2em;
+            position: initial;
+            display: inline-block;
+            color: #c1272c;
+            font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+          }
+     }
+    .team-fire {
+      border-top: 1.3em solid #c1272c;
+    }
+    .team-grandt{
+      border-top: 1.3em solid #faaf3a;
+    }
+    .team-ocain {
+      border-top: 1.3em solid #0070bb;
+    }
+    .team-heaven{
+      border-top: 1.3em solid #998575;
+    }
+  }
+
+.member {
+  position: relative;
+  display: inline-table;
+  /* padding-left: 3em;
+   padding-top: 2em;*/
+  .profile-name {
+  
+    color: #c1272c;
+    font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+  }
+ 
+}
+.team-fire-member{
+  
+}
+  .pic-frame {
+    display: inline-block;
+    position: relative;
+    .profile-pic {
+
+    }
+    .profile-name {
+
+    }
+    
+  }
