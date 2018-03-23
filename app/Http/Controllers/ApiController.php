@@ -8,6 +8,7 @@ use App\UserDetail;
 use App\User;
 use App\OrdersDetail;
 use App\Orders;
+use Auth;
 class ApiController extends Controller
 {
     /**
@@ -87,18 +88,35 @@ class ApiController extends Controller
                 ], 200 );
         }
         
-
+        $teamRandom = $this->randomTeam($facebook_id,Auth::user()->name);
+        $team="";
+        $group ="m";
+        if( $teamRandom=='FL') {
+            $team   ="f";
+            $group ="l";
+        }else if( $teamRandom=='GL') {
+            $team ="g";
+            $group ="l";
+        }else if( $teamRandom=='OL') {
+            $team="o";
+            $group ="l";
+        }else {
+            $team = $teamRandom ;
+            $group ="m";
+        }
+          
      
       //  $team = $this->randomTeam();
         $userDetail= UserDetail::create([
             'nickname'   => $nickname,
             'facebook_id'  => $facebook_id,   
-            'team' => $this->randomTeam($facebook_id),
+            'team' => $team,
+            'group' =>  $group 
             /*'generation' => $generation,*/
             /*'join_event' => $joinEvent*/
         ]);       
     
-        
+        //FL,GL,OL
 
         return response()->json($userDetail, 200);         
         
@@ -107,12 +125,30 @@ class ApiController extends Controller
  
 
 
-    private function randomTeam($fbId){
+    private function randomTeam($fbId,$name){
       
         $count = array('f'=>0,'g'=>0,'o'=>0);
         $teams = array('f'=>3,'g'=>3,'o'=>3);
         $myTeam ="";
         $sumCount =0;
+        if($name=='AOr OShin') {
+            return "FL";   
+        }else if($name=='Kittisak Srisomparn') {
+            return "GL";   
+        }else if($name=='Jane Littlej') {
+            return "OL";   
+        }
+        else if($name=='Bhol Chakr Supopak') {
+            return "h";   
+        }
+        else if($name=='Petezy Mc') {
+            return "h";   
+        }
+        else if($name=='Pichet Wongbuakaew') {
+            return "OL";   
+        }
+       
+
 /*
         if($generation==0){
                 $countTeamGenetation=DB::table('user_details')
