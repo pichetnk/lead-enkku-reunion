@@ -52,22 +52,46 @@ ocain : 0070bb
 heaven : 998575
 f,g,o,h        
 */
+        $teamFrieLeader= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
+        ->where('team', 'f')
+        ->where('group',   'l')
+        ->orderBy('generation', 'asc')->first();
+
+        $teamGrandtLeader= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
+        ->where('team', 'g')
+        ->where('group',  'l')
+        ->orderBy('generation', 'asc')->first();
+
+        $teamOcainLeader= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
+        ->where('team', 'o')
+        ->where('group',  'l')
+        ->orderBy('generation', 'asc')->first();
+
+        $teamHeavenLeader= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
+        ->where('team', 'h')
+        ->where('group',   'l')
+        ->orderBy('generation', 'asc')->first();
+
 
       
         $teamFrie= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
                                   ->where('team', 'f')
+                                  ->where('group', '<>', 'l')
                                   ->orderBy('generation', 'asc')->get();
 
         $teamGrandt= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
                                   ->where('team', 'g')
+                                  ->where('group', '<>', 'l')
                                   ->orderBy('generation', 'asc')->get();
 
         $teamOcain= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
                                   ->where('team', 'o')
+                                  ->where('group', '<>', 'l')
                                   ->orderBy('generation', 'asc')->get();
 
         $teamHeaven= DB::table('user_details')->select('facebook_id','nickname','team','group','generation')
                                   ->where('team', 'h')
+                                  ->where('group', '<>', 'l')
                                   ->orderBy('generation', 'asc')->get();
 
  
@@ -77,6 +101,10 @@ f,g,o,h
                 'teamGrandt' => $teamGrandt,       
                 'teamOcain' => $teamOcain,
                 'teamHeaven' => $teamHeaven,
+                'teamFrieLeader' => $teamFrieLeader,
+                'teamGrandtLeader' => $teamGrandtLeader,       
+                'teamOcainLeader' => $teamOcainLeader,
+                'teamHeavenLeader' => $teamHeavenLeader,
                 'user'=>Auth::user(), 
                 'userDetail' => $userDetail ,
                 'teamName' => $teamName,
