@@ -31,6 +31,7 @@ html, body
   height:100%;
   width:100%;
   overflow:hidden;
+
 }
 
 #appRegister {
@@ -73,15 +74,41 @@ html, body
   font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
   color : #269ab7;
   text-shadow: rgb(255, 255, 255) 7px 0px 0px, rgb(255, 255, 255) 6.92869px 0.996602px 0px, rgb(255, 255, 255) 6.71622px 1.9729px 0px, rgb(255, 255, 255) 6.36692px 2.909px 0px, rgb(255, 255, 255) 5.8879px 3.78584px 0px, rgb(255, 255, 255) 5.28893px 4.58555px 0px, rgb(255, 255, 255) 4.5822px 5.29183px 0px, rgb(255, 255, 255) 3.78212px 5.8903px 0px, rgb(255, 255, 255) 2.90498px 6.36876px 0px, rgb(255, 255, 255) 1.96865px 6.71747px 0px, rgb(255, 255, 255) 0.992221px 6.92932px 0px, rgb(255, 255, 255) -0.00442571px 7px 0px, rgb(255, 255, 255) -1.00098px 6.92806px 0px, rgb(255, 255, 255) -1.97715px 6.71498px 0px, rgb(255, 255, 255) -2.91303px 6.36508px 0px, rgb(255, 255, 255) -3.78956px 5.88551px 0px, rgb(255, 255, 255) -4.58889px 5.28603px 0px, rgb(255, 255, 255) -5.29472px 4.57885px 0px, rgb(255, 255, 255) -5.89269px 3.77839px 0px, rgb(255, 255, 255) -6.3706px 2.90095px 0px, rgb(255, 255, 255) -6.71871px 1.96441px 0px, rgb(255, 255, 255) -6.92995px 0.98784px 0px, rgb(255, 255, 255) -6.99999px -0.00885142px 0px, rgb(255, 255, 255) -6.92743px -1.00536px 0px, rgb(255, 255, 255) -6.71372px -1.98139px 0px, rgb(255, 255, 255) -6.36324px -2.91705px 0px, rgb(255, 255, 255) -5.88311px -3.79328px 0px, rgb(255, 255, 255) -5.28313px -4.59223px 0px, rgb(255, 255, 255) -4.57551px -5.29762px 0px, rgb(255, 255, 255) -3.77466px -5.89507px 0px, rgb(255, 255, 255) -2.89692px -6.37243px 0px, rgb(255, 255, 255) -1.96016px -6.71995px 0px, rgb(255, 255, 255) -0.983458px -6.93057px 0px, rgb(255, 255, 255) 0.0132771px -6.99999px 0px, rgb(255, 255, 255) 1.00974px -6.92679px 0px, rgb(255, 255, 255) 1.98564px -6.71247px 0px, rgb(255, 255, 255) 2.92107px -6.36139px 0px, rgb(255, 255, 255) 3.797px -5.88071px 0px, rgb(255, 255, 255) 4.59557px -5.28022px 0px, rgb(255, 255, 255) 5.30051px -4.57215px 0px, rgb(255, 255, 255) 5.89746px -3.77094px 0px, rgb(255, 255, 255) 6.37426px -2.89289px 0px, rgb(255, 255, 255) 6.72119px -1.95591px 0px, rgb(255, 255, 255) 6.93119px -0.979076px 0px;  
-   h1{
-    font-size: 6em;
-   }
-   h3{
-    font-size: 3em;
-   }
-   h4{
-    font-size: 2em;
-   }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {  
+    h1{
+    font-size: 1em;
+    }
+    h3{
+      font-size: 0.5em;
+    }
+    h4{
+      font-size: 0.3em;
+    } 
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {    }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {   }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {  
+      h1{
+        font-size: 6em;
+      }
+      h3{
+        font-size: 3em;
+      }
+      h4{
+        font-size: 2em;
+      }
+  }  
+  
+ 
+  
 }
 
 #header-text{
@@ -89,27 +116,47 @@ html, body
   font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
   color : #269ab7;
   text-shadow: rgb(255, 255, 255) 7px 0px 0px, rgb(255, 255, 255) 6.92869px 0.996602px 0px, rgb(255, 255, 255) 6.71622px 1.9729px 0px, rgb(255, 255, 255) 6.36692px 2.909px 0px, rgb(255, 255, 255) 5.8879px 3.78584px 0px, rgb(255, 255, 255) 5.28893px 4.58555px 0px, rgb(255, 255, 255) 4.5822px 5.29183px 0px, rgb(255, 255, 255) 3.78212px 5.8903px 0px, rgb(255, 255, 255) 2.90498px 6.36876px 0px, rgb(255, 255, 255) 1.96865px 6.71747px 0px, rgb(255, 255, 255) 0.992221px 6.92932px 0px, rgb(255, 255, 255) -0.00442571px 7px 0px, rgb(255, 255, 255) -1.00098px 6.92806px 0px, rgb(255, 255, 255) -1.97715px 6.71498px 0px, rgb(255, 255, 255) -2.91303px 6.36508px 0px, rgb(255, 255, 255) -3.78956px 5.88551px 0px, rgb(255, 255, 255) -4.58889px 5.28603px 0px, rgb(255, 255, 255) -5.29472px 4.57885px 0px, rgb(255, 255, 255) -5.89269px 3.77839px 0px, rgb(255, 255, 255) -6.3706px 2.90095px 0px, rgb(255, 255, 255) -6.71871px 1.96441px 0px, rgb(255, 255, 255) -6.92995px 0.98784px 0px, rgb(255, 255, 255) -6.99999px -0.00885142px 0px, rgb(255, 255, 255) -6.92743px -1.00536px 0px, rgb(255, 255, 255) -6.71372px -1.98139px 0px, rgb(255, 255, 255) -6.36324px -2.91705px 0px, rgb(255, 255, 255) -5.88311px -3.79328px 0px, rgb(255, 255, 255) -5.28313px -4.59223px 0px, rgb(255, 255, 255) -4.57551px -5.29762px 0px, rgb(255, 255, 255) -3.77466px -5.89507px 0px, rgb(255, 255, 255) -2.89692px -6.37243px 0px, rgb(255, 255, 255) -1.96016px -6.71995px 0px, rgb(255, 255, 255) -0.983458px -6.93057px 0px, rgb(255, 255, 255) 0.0132771px -6.99999px 0px, rgb(255, 255, 255) 1.00974px -6.92679px 0px, rgb(255, 255, 255) 1.98564px -6.71247px 0px, rgb(255, 255, 255) 2.92107px -6.36139px 0px, rgb(255, 255, 255) 3.797px -5.88071px 0px, rgb(255, 255, 255) 4.59557px -5.28022px 0px, rgb(255, 255, 255) 5.30051px -4.57215px 0px, rgb(255, 255, 255) 5.89746px -3.77094px 0px, rgb(255, 255, 255) 6.37426px -2.89289px 0px, rgb(255, 255, 255) 6.72119px -1.95591px 0px, rgb(255, 255, 255) 6.93119px -0.979076px 0px;  
- /*  h1{
-    font-size: 2em;
-   }
-   h3{
-    font-size: 1.5em;
-   }
-   h4{
-    font-size: 1em;
-   }*/
+ // Small devices (landscape phones, 576px and up)
+ 
+  h1{
+  font-size: 1em;
+  }
+  h3{
+    font-size: 0.5em;
+  }
+  h4{
+    font-size: 0.3em;
+  } 
+ 
+@media (min-width: 768px) {  
+    h1{
+      font-size: 3em;
+    }
+    h3{
+      font-size: 2em;
+    }
+    h4{
+      font-size: 1em;
+    }
+}  
 }
-
 .img-team-register {
-  width: 7em;
-  
+  width:4em;      
   position: relative;
+  padding-bottom:4em;
+  @media(min-width: 768px) {
+    width: 7em;
+    padding-bottom: 2em;
+  
+  }
 }
+ 
  .bg {   
     background-image: url('/images/register-bg.png');
     background-repeat : round;
     min-height: 600px;
     width:100%;
+     
   }
  
 #appTeam{
@@ -133,6 +180,14 @@ html, body
         display: inline-block;
         color: #000;
         font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold; 
+        h4 {
+          font-size: 1em;
+          @media(min-width: 768px) {
+            font-size: 2em;
+          
+          }
+        }
+
       }
  }
  .myprofile {
@@ -143,14 +198,17 @@ html, body
    padding-bottom: 2em;
   border: 0.3em solid #000;
  }
-.team{
-   
+.team{   
    padding-top: 4em;
     .logo {
       position: relative;
       top : -1.3em;
       img {
-        max-width: 13em;
+        max-width: 4em;
+        @media(min-width: 768px) {
+          max-width: 13em;
+        
+        }
       }
     }
     .team-name {
@@ -159,9 +217,14 @@ html, body
       position: relative;
       left: 2em;
       top: 1em;
-        h1 {
-          font-size: 4em;
+      h1 {
+        font-size: 2em;
+        @media(min-width: 768px) {
+          font-size: 3em;
+        
         }
+      }      
+       
     } 
     
      
@@ -206,7 +269,13 @@ html, body
         }
     }
   }
-
+.profile-leader {
+  width: 75px;
+  @media(min-width: 768px) {
+    width: 150px;
+  
+  }
+}
 .member {
   position: relative;
   display: inline-table;
@@ -228,4 +297,20 @@ html, body
     display: inline-block;
     position: relative;   
     
-  }
+}
+.profile-member {
+    width: 75px;
+    @media(min-width: 768px) {
+      width: 150px;
+    
+    }
+  
+}
+
+.profile-name {
+  font-size: 1em;
+        @media(min-width: 768px) {
+          font-size: 1.5em;
+        
+        }
+}

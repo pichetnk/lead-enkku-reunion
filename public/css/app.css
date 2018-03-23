@@ -10067,16 +10067,32 @@ body {
   text-shadow: white 7px 0px 0px, white 6.92869px 0.996602px 0px, white 6.71622px 1.9729px 0px, white 6.36692px 2.909px 0px, white 5.8879px 3.78584px 0px, white 5.28893px 4.58555px 0px, white 4.5822px 5.29183px 0px, white 3.78212px 5.8903px 0px, white 2.90498px 6.36876px 0px, white 1.96865px 6.71747px 0px, white 0.992221px 6.92932px 0px, white -0.00442571px 7px 0px, white -1.00098px 6.92806px 0px, white -1.97715px 6.71498px 0px, white -2.91303px 6.36508px 0px, white -3.78956px 5.88551px 0px, white -4.58889px 5.28603px 0px, white -5.29472px 4.57885px 0px, white -5.89269px 3.77839px 0px, white -6.3706px 2.90095px 0px, white -6.71871px 1.96441px 0px, white -6.92995px 0.98784px 0px, white -6.99999px -0.00885142px 0px, white -6.92743px -1.00536px 0px, white -6.71372px -1.98139px 0px, white -6.36324px -2.91705px 0px, white -5.88311px -3.79328px 0px, white -5.28313px -4.59223px 0px, white -4.57551px -5.29762px 0px, white -3.77466px -5.89507px 0px, white -2.89692px -6.37243px 0px, white -1.96016px -6.71995px 0px, white -0.983458px -6.93057px 0px, white 0.0132771px -6.99999px 0px, white 1.00974px -6.92679px 0px, white 1.98564px -6.71247px 0px, white 2.92107px -6.36139px 0px, white 3.797px -5.88071px 0px, white 4.59557px -5.28022px 0px, white 5.30051px -4.57215px 0px, white 5.89746px -3.77094px 0px, white 6.37426px -2.89289px 0px, white 6.72119px -1.95591px 0px, white 6.93119px -0.979076px 0px;
 }
 
-#landing-text h1 {
-  font-size: 6em;
+@media (min-width: 576px) {
+  #landing-text h1 {
+    font-size: 1em;
+  }
+
+  #landing-text h3 {
+    font-size: 0.5em;
+  }
+
+  #landing-text h4 {
+    font-size: 0.3em;
+  }
 }
 
-#landing-text h3 {
-  font-size: 3em;
-}
+@media (min-width: 1200px) {
+  #landing-text h1 {
+    font-size: 6em;
+  }
 
-#landing-text h4 {
-  font-size: 2em;
+  #landing-text h3 {
+    font-size: 3em;
+  }
+
+  #landing-text h4 {
+    font-size: 2em;
+  }
 }
 
 #header-text {
@@ -10084,20 +10100,45 @@ body {
   font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold;
   color: #269ab7;
   text-shadow: white 7px 0px 0px, white 6.92869px 0.996602px 0px, white 6.71622px 1.9729px 0px, white 6.36692px 2.909px 0px, white 5.8879px 3.78584px 0px, white 5.28893px 4.58555px 0px, white 4.5822px 5.29183px 0px, white 3.78212px 5.8903px 0px, white 2.90498px 6.36876px 0px, white 1.96865px 6.71747px 0px, white 0.992221px 6.92932px 0px, white -0.00442571px 7px 0px, white -1.00098px 6.92806px 0px, white -1.97715px 6.71498px 0px, white -2.91303px 6.36508px 0px, white -3.78956px 5.88551px 0px, white -4.58889px 5.28603px 0px, white -5.29472px 4.57885px 0px, white -5.89269px 3.77839px 0px, white -6.3706px 2.90095px 0px, white -6.71871px 1.96441px 0px, white -6.92995px 0.98784px 0px, white -6.99999px -0.00885142px 0px, white -6.92743px -1.00536px 0px, white -6.71372px -1.98139px 0px, white -6.36324px -2.91705px 0px, white -5.88311px -3.79328px 0px, white -5.28313px -4.59223px 0px, white -4.57551px -5.29762px 0px, white -3.77466px -5.89507px 0px, white -2.89692px -6.37243px 0px, white -1.96016px -6.71995px 0px, white -0.983458px -6.93057px 0px, white 0.0132771px -6.99999px 0px, white 1.00974px -6.92679px 0px, white 1.98564px -6.71247px 0px, white 2.92107px -6.36139px 0px, white 3.797px -5.88071px 0px, white 4.59557px -5.28022px 0px, white 5.30051px -4.57215px 0px, white 5.89746px -3.77094px 0px, white 6.37426px -2.89289px 0px, white 6.72119px -1.95591px 0px, white 6.93119px -0.979076px 0px;
-  /*  h1{
+}
+
+#header-text h1 {
+  font-size: 1em;
+}
+
+#header-text h3 {
+  font-size: 0.5em;
+}
+
+#header-text h4 {
+  font-size: 0.3em;
+}
+
+@media (min-width: 768px) {
+  #header-text h1 {
+    font-size: 3em;
+  }
+
+  #header-text h3 {
     font-size: 2em;
-   }
-   h3{
-    font-size: 1.5em;
-   }
-   h4{
+  }
+
+  #header-text h4 {
     font-size: 1em;
-   }*/
+  }
 }
 
 .img-team-register {
-  width: 7em;
+  width: 4em;
   position: relative;
+  padding-bottom: 4em;
+}
+
+@media (min-width: 768px) {
+  .img-team-register {
+    width: 7em;
+    padding-bottom: 2em;
+  }
 }
 
 .bg {
@@ -10134,6 +10175,16 @@ body {
   font-family: "CharlemagneStdBold", Fallback, CharlemagneStdBold;
 }
 
+.team-leader .leader-profile-name h4 {
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .team-leader .leader-profile-name h4 {
+    font-size: 2em;
+  }
+}
+
 .myprofile {
   position: relative;
   top: 2em;
@@ -10153,7 +10204,13 @@ body {
 }
 
 .team .logo img {
-  max-width: 13em;
+  max-width: 4em;
+}
+
+@media (min-width: 768px) {
+  .team .logo img {
+    max-width: 13em;
+  }
 }
 
 .team .team-name {
@@ -10165,7 +10222,13 @@ body {
 }
 
 .team .team-name h1 {
-  font-size: 4em;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .team .team-name h1 {
+    font-size: 3em;
+  }
 }
 
 .team .team-fire {
@@ -10216,6 +10279,16 @@ body {
   color: #998575;
 }
 
+.profile-leader {
+  width: 75px;
+}
+
+@media (min-width: 768px) {
+  .profile-leader {
+    width: 150px;
+  }
+}
+
 .member {
   position: relative;
   display: inline-table;
@@ -10236,5 +10309,25 @@ body {
 .pic-frame {
   display: inline-block;
   position: relative;
+}
+
+.profile-member {
+  width: 75px;
+}
+
+@media (min-width: 768px) {
+  .profile-member {
+    width: 150px;
+  }
+}
+
+.profile-name {
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  .profile-name {
+    font-size: 1.5em;
+  }
 }
 

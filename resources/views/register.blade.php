@@ -25,7 +25,7 @@
 
 
     <div class="row justify-content-center "  >
-        <div class="col-6 bg" >
+        <div class="col-xl-6  col-sm-10 bg" >
             <div class="row justify-content-center "  >
                 <div class="col" >
                     <div class="text-center">

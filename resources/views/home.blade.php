@@ -11,7 +11,7 @@
             <br>
             <h1>WAR OF THE WINTER</h1>
             <br><h4>4-25 MARCH 2018  @ KHAOYAI</h4>
-
+            <br><br>
              <a href="{{ route('facebook-login') }}"> Login </a>
         </center>
     </div>
